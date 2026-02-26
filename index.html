@@ -1,34 +1,29 @@
+
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
     <a-scene>
 
       <a-assets>
-        <img id="wall" src="Wall.png">
         <img id="purpleWall" src="Wall.png">
         <img id="redWall" src="RedW.png">
+        <img id="light" src="Lights.png">
       </a-assets>
 
-      <a-box position="0 15 -50" width="45" height="50" rotation="0 0 0" src="Wall.png" repeat="20 1"></a-box>
+      <a-box position="0 15 -50" width="45" height="50" rotation="0 0 0" color="black"></a-box>
       <!-- Left Curve Walls-->
-      <a-box position="-30 15 -45" width="25" height="50" rotation="0 30 0" color="green"></a-box>
-      <a-box position="-30 15 83" width="25" height="50" rotation="0 -30 0" color="green"></a-box>
-      <a-box position="-47 15 -29.5" width="25" height="50" rotation="0 55 0" color="green"></a-box>
-      <a-box position="-47 15 68" width="25" height="50" rotation="0 -55 0" color="green"></a-box>
-      <a-box position="-57 15 -9" width="25" height="50" rotation="0 75 0" color="green"></a-box>
-      <a-box position="-57 15 47" width="25" height="50" rotation="0 -75 0" color="green"></a-box>
-      <a-box position="-60.2 15 20" width="35" height="50" rotation="0 90 0" color="green"></a-box>
-
-      <!-- some details wall -->
-      <a-box position="-40 15 -38" width="1" height="50" rotation="0 30 0" color="yellow"></a-box>
-      <a-box position="-19.8 15 87.5" width="1" height="50" rotation="0 -30 0" color="yellow"></a-box>
-      <a-box position="-30 15 -45" width="25" height="50" rotation="0 30 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="-30 15 83" width="25" height="50" rotation="0 -30 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="-47 15 -29.5" width="25" height="50" rotation="0 55 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="-47 15 68" width="25" height="50" rotation="0 -55 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="-57 15 -9" width="25" height="50" rotation="0 75 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="-57 15 47" width="25" height="50" rotation="0 -75 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="-60.2 15 20" width="35" height="50" rotation="0 90 0" src="Wall.png" repeat="20 1"></a-box>
+      <a-box position="-30 15 -45" width="25" height="50" rotation="0 30 0" color="black"></a-box>
+      <a-box position="-30 15 83" width="25" height="50" rotation="0 -30 0" color="black"></a-box>
+      <a-box position="-47 15 -29.5" width="25" height="50" rotation="0 55 0" color="black"></a-box>
+      <a-box position="-47 15 68" width="25" height="50" rotation="0 -55 0" color="black"></a-box>
+      <a-box position="-57 15 -9" width="25" height="50" rotation="0 75 0" color="black"></a-box>
+      <a-box position="-57 15 47" width="25" height="50" rotation="0 -75 0" color="black"></a-box>
+      <a-box position="-60.2 15 20" width="35" height="50" rotation="0 90 0" color="black"></a-box>
 
       <!-- some details wall L -->
-      <a-box position="-40.1 15 -38" width="1" height="50" rotation="0 30 0" color="yellow"></a-box>
+      <a-box position="-40.1 15 -38" width="1" height="50" rotation="0 30 0" src="Lights.png"></a-box>
       <a-box position="-19.8 15 87.9" width="1" height="50" rotation="0 -30 0" color="yellow"></a-box>
       <a-box position="-54 15 -19" width="1" height="50" rotation="0 55 0" color="yellow"></a-box>
       <a-box position="-40 15 76.9" width="1" height="50" rotation="0 -55 0" color="yellow"></a-box>
@@ -37,21 +32,13 @@
       <a-box position="-60 15 35" width="1" height="50" rotation="0 90 0" color="yellow"></a-box>
 
       <!-- Right Curve Walls-->
-      <a-box position="30 15 -45" width="25" height="50" rotation="0 -30 0" color="green"></a-box>
-      <a-box position="30 15 83" width="25" height="50" rotation="0 30 0" color="green"></a-box>
-      <a-box position="47 15 -29.5" width="25" height="50" rotation="0 -55 0" color="green"></a-box>
-      <a-box position="47 15 68" width="25" height="50" rotation="0 55 0" color="green"></a-box>
-      <a-box position="57 15 -9" width="25" height="50" rotation="0 -75 0" color="green"></a-box>
-      <a-box position="57 15 47" width="25" height="50" rotation="0 75 0" color="green"></a-box>
-      <a-box position="60.2 15 20" width="35" height="50" rotation="0 -90 0" color="green"></a-box>
-
-      <a-box position="30 15 -45" width="25" height="50" rotation="0 -30 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="30 15 83" width="25" height="50" rotation="0 30 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="47 15 -29.5" width="25" height="50" rotation="0 -55 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="47 15 68" width="25" height="50" rotation="0 55 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="57 15 -9" width="25" height="50" rotation="0 -75 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="57 15 47" width="25" height="50" rotation="0 75 0" src="Wall.png" repeat="20 1"></a-box>
-      <a-box position="60.2 15 20" width="35" height="50" rotation="0 -90 0" src="Wall.png" repeat="20 1"></a-box>
+      <a-box position="30 15 -45" width="25" height="50" rotation="0 -30 0" color="black"></a-box>
+      <a-box position="30 15 83" width="25" height="50" rotation="0 30 0" color="black"></a-box>
+      <a-box position="47 15 -29.5" width="25" height="50" rotation="0 -55 0" color="black"></a-box>
+      <a-box position="47 15 68" width="25" height="50" rotation="0 55 0" color="black"></a-box>
+      <a-box position="57 15 -9" width="25" height="50" rotation="0 -75 0" color="black"></a-box>
+      <a-box position="57 15 47" width="25" height="50" rotation="0 75 0" color="black"></a-box>
+      <a-box position="60.2 15 20" width="35" height="50" rotation="0 -90 0" color="black"></a-box>
 
       <!-- some details wall R -->
       <a-box position="40.1 15 -38" width="1" height="50" rotation="0 30 0" color="yellow"></a-box>
@@ -61,20 +48,35 @@
       <a-box position="59.9 15 3" width="1" height="50" rotation="0 75 0" color="yellow"></a-box>
       <a-box position="54 15 57" width="1" height="50" rotation="0 -75 0" color="yellow"></a-box>
       <a-box position="60 15 35" width="1" height="50" rotation="0 90 0" color="yellow"></a-box>
-
+      
       <!-- Exit -->
-      <a-cylinder position="0 12 -50" radius="15" height="1" rotation="0 0 0" color="yellow"></a-cylinder>
-      <a-cylinder position="0 12.2 -50" radius="15" height="1" rotation="0 0 0" src="RedW.png"></a-cylinder>
+      <a-cylinder position="0 12.2 -50" radius="15" height="1" rotation="0 0 0" color="#3f1b15"></a-cylinder>
       <a-cylinder position="0 32 -50" radius="15" height="3" rotation="0 0 0" color="yellow"></a-cylinder>
       <a-box position="-13 22 -48.8" width="3" height="20" rotation="0 0 0" color="yellow"></a-box>
       <a-box position="13 22 -48.8" width="3" height="20" rotation="0 0 0" color="yellow"></a-box>
-@@ -59,142 +73,142 @@
+
+      <a-box position="-10 19 -48.7" width="1" height="13" rotation="0 0 0" color="yellow"></a-box>
+      <a-box position="10 19 -48.7" width="1" height="13" rotation="0 0 0" color="yellow"></a-box>
+      <a-box position="-9.4 26 -48.7" width="1" height="2" rotation="0 0 -45" color="yellow"></a-box>
+      <a-box position="9.4 26 -48.7" width="1" height="2" rotation="0 0 45" color="yellow"></a-box>
+      <a-box position="-8 27 -48.7" width="1" height="2" rotation="0 0 -60" color="yellow"></a-box>
+      <a-box position="8 27 -48.7" width="1" height="2" rotation="0 0 60" color="yellow"></a-box>
+      <a-box position="0 27.5 -48.7" width="1" height="15" rotation="0 0 90" color="yellow"></a-box>
+      <a-box position="0 20 -49.7" width="15" height="15" rotation="0 0 0" color="purple"></a-box>
+      <a-box position="-7.5 18 -49.7" width="5" height="15" rotation="0 0 0" color="purple"></a-box>
+      <a-box position="7.5 18 -49.7" width="5" height="15" rotation="0 0 0" color="purple"></a-box>
+      <a-box position="-6.7 26 -49.7" width="5" height="1.5" rotation="0 0 0" color="purple"></a-box>
+      <a-box position="6.7 26 -49.7" width="5" height="1.5" rotation="0 0 0" color="purple"></a-box>
+
+      <!-- door -->
+      <a-box position="-4.1 15 -49.4" width="8" height="20" rotation="0 0 0" color="green"></a-box>
+      <a-box position="-4.1 17 -48" width="7" height="0.5" rotation="0 0 40" color="blue"></a-box>
+      <a-box position="4.1 15 -49.4" width="8" height="20" rotation="0 0 0" color="green"></a-box>
       <a-box position="4.1 17 -48" width="7" height="0.5" rotation="0 0 -40" color="blue"></a-box>
 
        <!-- Entrance -->
-      <a-box position="0 15 88.4" width="45" height="50" rotation="0 0 0" color="green"></a-box>
-      <a-box position="0 15 88.4" width="45" height="50" rotation="0 0 0" src="Wall.png" repeat="20 1"></a-box>
-
+      <a-box position="0 15 88.4" width="45" height="50" rotation="0 0 0" color="black"></a-box>
+      
       <a-box position="-10 19 87.5" width="1" height="13" rotation="0 0 0" color="yellow"></a-box>
       <a-box position="10 19 87.5" width="1" height="13" rotation="0 0 0" color="yellow"></a-box>
       <a-box position="-9.4 26 87.5" width="1" height="2" rotation="0 0 -45" color="yellow"></a-box>
@@ -87,12 +89,12 @@
       <a-box position="7.5 18 88" width="5" height="15" rotation="0 0 0" color="purple"></a-box>
       <a-box position="-6.7 26 88" width="5" height="1.5" rotation="0 0 0" color="purple"></a-box>
       <a-box position="6.7 26 88" width="5" height="1.5" rotation="0 0 0" color="purple"></a-box>
-
-      <a-box position="-7 12 -30" width="1" height="195" rotation="90 0 0" color="yellow"></a-box>
+      
+      <a-box position="-7 12 -30" width="1" height="195" rotation="90 0 0" color="yellow" src="Lights.png"></a-box>
       <a-box position="7 12 -30" width="1" height="195" rotation="90 0 0" color="yellow"></a-box>
       <a-box position="-1 12 -30" width="1" height="195" rotation="90 0 0" color="yellow"></a-box>
       <a-box position="1 12 -30" width="1" height="195" rotation="90 0 0" color="yellow"></a-box>
-
+       
       <!-- door -->
       <a-box position="-4.1 15 87.6" width="8" height="20" rotation="0 0 0" color="green"></a-box>
       <a-box position="4.1 15 87.6" width="8" height="20" rotation="0 0 0" color="green"></a-box>
@@ -195,20 +197,22 @@
       <a-box position="-4 12 55" width="5" height="5" rotation="90 0 0" color="blue"></a-box>
       <a-box position="-4 12 62.5" width="5" height="5" rotation="90 0 0" color="blue"></a-box>
 
-      <a-box position="0 12 77.9" width="20" height="20" rotation="90 0 0" color="yellow"></a-box>
-      <a-box position="0 12 68" width="20" height="1" rotation="90 0 0" color="yellow"></a-box>
-      <a-box position="-10.7 12 68.9" width="3" height="1" rotation="90 45 0" color="yellow"></a-box>
-      <a-box position="10.7 12 68.9" width="3" height="1" rotation="90 -45 0" color="yellow"></a-box>
-      <a-box position="-11.6 12 79.6" width="20" height="1" rotation="90 90 0" color="yellow"></a-box>
-      <a-box position="-10.5 12 79" width="20" height="2" rotation="90 90 0" color="yellow"></a-box>
-      <a-box position="11.6 12 79.6" width="20" height="1" rotation="90 90 0" color="yellow"></a-box>
-      <a-box position="10.5 12 79" width="20" height="2" rotation="90 90 0" color="yellow"></a-box>
+      <a-box position="0 12 77.9" width="20" height="20" rotation="90 0 0" color="#3f1b15"></a-box>
+      <a-box position="0 12 68" width="20" height="1" rotation="90 0 0" color="#c2bd5f"></a-box>
+      <a-box position="0 13 68" width="20" height="1" rotation="90 0 0" color="#c2bd5f"></a-box>
+      <a-box position="-10.7 12 68.9" width="3" height="1" rotation="90 45 0" color="#c2bd5f"></a-box>
+      <a-box position="10.7 12 68.9" width="3" height="1" rotation="90 -45 0" color="#c2bd5f"></a-box>
+      <a-box position="-11.6 12 79.6" width="20" height="1" rotation="90 90 0" color="#c2bd5f"></a-box>
+      <a-box position="-10.5 12 79" width="20" height="2" rotation="90 90 0" color="#3f1b15"></a-box>
+      <a-box position="11.6 12 79.6" width="20" height="1" rotation="90 90 0" color="#c2bd5f"></a-box>
+      <a-box position="10.5 12 79" width="20" height="2" rotation="90 90 0" color="#3f1b15"></a-box>
 
       <!-- <a-camera wasd-controls="fly: true; acceleration: 200"></a-camera> -->
-       <a-camera position="0 80 60"></a-camera>
+       <a-camera position="0 20 60"></a-camera>
 
 
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="150" height="200" color="#7BC8A4"></a-plane>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="150" height="200" color="black"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
+</html>
