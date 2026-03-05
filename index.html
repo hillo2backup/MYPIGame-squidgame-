@@ -25,7 +25,7 @@
 
       <!-- some details wall L -->
       <a-box position="-40.1 15 -38" width="1" height="50" rotation="0 30 0" src="Lights.png"></a-box>
-      <a-box position="-19.8 15 87.9" width="1" height="50" rotation="0 -30 0" color="#fff9f2"></a-box>
+      <a-box position="-19.8 15 87.9" width="1" height="50" rotation="0 -30 0" color="yellow"></a-box>
       <a-box position="-54 15 -19" width="1" height="50" rotation="0 55 0" color="yellow"></a-box>
       <a-box position="-40 15 76.9" width="1" height="50" rotation="0 -55 0" color="yellow"></a-box>
       <a-box position="-59.9 15 3" width="1" height="50" rotation="0 75 0" color="yellow"></a-box>
@@ -50,14 +50,20 @@
       <a-box position="54 15 57" width="1" height="50" rotation="0 -75 0" color="yellow"></a-box>
       <a-box position="60 15 35" width="1" height="50" rotation="0 90 0" color="yellow"></a-box>
       
+      <a-entity position="0 20 0">
       <!-- Exit -->
       <a-cylinder position="0 12.2 -50" radius="15" height="1" rotation="0 0 0" color="#3f1b15"></a-cylinder>
-      <!-- detail for the floor edge -->
-      <a-box position="0 12.3 -35" width="1.5" height="6.8" rotation="0 0 90" color="white"></a-box>
-      <a-box position="6 12.3 -36" width="1.5" height="6" rotation="0 20 90" color="white"></a-box>
-      <a-box position="10 12.3 -38.5" width="1.5" height="6" rotation="0 45 90" color="white"></a-box>
-      <a-box position="14 12.3 -43.5" width="1.5" height="6" rotation="0 56 90" color="white"></a-box>
-      <a-box position="15 12.3 -47" width="1.5" height="6" rotation="0 90 90" color="white"></a-box>
+      <!-- detail for the floor edge right side-->
+      <a-box position="0 12.3 -35" width="1.5" height="6.8" rotation="0 0 90" color="#eaba22"></a-box>
+      <a-box position="6 12.3 -36" width="1.5" height="6" rotation="0 20 90" color="#eaba22"></a-box>
+      <a-box position="10 12.3 -38.5" width="1.5" height="6" rotation="0 45 90" color="#eaba22"></a-box>
+      <a-box position="13 12.3 -42" width="1.5" height="6" rotation="0 56 90" color="#eaba22"></a-box>
+      <a-box position="14.5 12.3 -47" width="1.5" height="6" rotation="0 90 90" color="#eaba22"></a-box>
+       <!-- left side -->
+      <a-box position="-6 12.3 -36" width="1.5" height="6" rotation="0 -20 -90" color="#eaba22"></a-box>
+      <a-box position="-10 12.3 -38.5" width="1.5" height="6" rotation="0 -45 -90" color="#eaba22"></a-box>
+      <a-box position="-13 12.3 -42" width="1.5" height="6" rotation="0 -56 -90" color="#eaba22"></a-box>
+      <a-box position="-14.5 12.3 -47" width="1.5" height="6" rotation="0 -90 -90" color="#eaba22"></a-box>
 
       <a-cylinder position="0 32 -50" radius="15" height="3" rotation="0 0 0" color="#1f3b52"></a-cylinder>
       <a-box position="-13 22 -48.8" width="3" height="20" rotation="0 0 0" color="#1f3b52"></a-box>
@@ -83,7 +89,6 @@
       <a-box position="4.1 17 -48.5" width="7" height="0.5" rotation="0 0 -40" color="blue"></a-box>
 
        <!-- Entrance -->
-      <a-box position="0 15 88.4" width="45" height="50" rotation="0 0 0" color="#070511"></a-box>
       
       <a-box position="-10 19 87.5" width="1" height="13" rotation="0 0 0" color="#1f3b52"></a-box>
       <a-box position="10 19 87.5" width="1" height="13" rotation="0 0 0" color="#1f3b52"></a-box>
@@ -172,9 +177,6 @@
       <a-cylinder position="9 13.6 73.6" radius="0.3" height="3.5" rotation="90 0 0" color="#0c1a87"></a-cylinder>
       </a-entity>
 
-
-
-
       <!-- Right Glass  -->
       <a-box position="4 12 -30" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="4 12 -22" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
@@ -218,9 +220,12 @@
       <a-box position="-11.6 12.5 79.6" width="20" height="1" rotation="90 90 0" color="#c2bd5f"></a-box>
       <a-box position="11.6 12.5 79.6" width="20" height="1" rotation="90 90 0" color="#c2bd5f"></a-box>
       <a-box position="10.5 12 79" width="20" height="2" rotation="90 90 0" color="#3f1b15"></a-box>
+      </a-entity>
+
+      <a-box position="0 15 88.4" width="45" height="50" rotation="0 0 0" color="#070511"></a-box>
 
       <!-- <a-camera wasd-controls="fly: true; acceleration: 200"></a-camera> -->
-       <a-camera position="0 20 -10"></a-camera>
+       <a-camera position="0 30 30"></a-camera>
 
 
       <a-plane position="0 0 -4" rotation="-90 0 0" width="150" height="200" color="black"></a-plane>
