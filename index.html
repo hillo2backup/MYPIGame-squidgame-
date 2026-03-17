@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <a-scene>
@@ -12,6 +13,15 @@
         <img id="light" src="Lights.png">
         <img id="door" src="door.png">
       </a-assets>
+
+      <!-- PLAYER -->
+<a-entity id="player" position="0 13 70" player-move check-glass>
+
+  <a-sphere radius="1" color="red"></a-sphere>
+
+  <a-camera position="0 6 10"></a-camera>
+
+</a-entity>
 
       <a-box position="0 15 -50" width="45" height="90" rotation="0 0 0" color="#070511"></a-box>
       <!-- Left Curve Walls-->
@@ -179,8 +189,48 @@
       <a-cylinder position="9 13.6 73.6" radius="0.3" height="3.5" rotation="90 0 0" color="#0c1a87"></a-cylinder>
       </a-entity>
 
+      <a-box class="glass" position="4 12 -30" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 -30" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 -22" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 -22" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 -14" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 -14" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 -6.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 -6.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 1" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 1" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 8.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 8.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 16" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 16" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 23.9" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 23.9" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 31.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 31.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 39.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 39.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 47.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 47.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 55" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 55" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+<a-box class="glass" position="4 12 62.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+<a-box class="glass" position="-4 12 62.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+
+
       <!-- Right Glass  -->
-      <a-box position="4 12 -30" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+      <!-- <a-box position="4 12 -30" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="4 12 -22" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="4 12 -14" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="4 12 -6.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
@@ -192,10 +242,10 @@
       <a-box position="4 12 39.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="4 12 47.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="4 12 55" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
-      <a-box position="4 12 62.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+      <a-box position="4 12 62.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box> -->
 
       <!-- Left Glass  -->
-      <a-box position="-4 12 -30" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+      <!-- <a-box position="-4 12 -30" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="-4 12 -22" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="-4 12 -14" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="-4 12 -6.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
@@ -207,7 +257,7 @@
       <a-box position="-4 12 39.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="-4 12 47.8" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
       <a-box position="-4 12 55" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
-      <a-box position="-4 12 62.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box>
+      <a-box position="-4 12 62.5" width="5" height="5" rotation="90 0 0" color="gray" opacity="0.5"></a-box> -->
 
       <a-box position="0 12 77.9" width="20" height="20" rotation="90 0 0" color="#3f1b15"></a-box>
       <a-box position="0 12 68" width="20" height="1" rotation="90 0 0" color="#c2bd5f"></a-box>
